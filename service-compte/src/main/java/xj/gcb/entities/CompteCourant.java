@@ -19,7 +19,6 @@ import java.util.Date;
 @ToString*/
 @Data
 @NoArgsConstructor
-
 @Entity
 public class CompteCourant extends Compte{
     private double decouvert;

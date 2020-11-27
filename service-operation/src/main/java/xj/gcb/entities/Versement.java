@@ -1,0 +1,21 @@
+package xj.gcb.entities;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import java.util.Date;
+
+@Data
+@NoArgsConstructor
+@Entity
+public class Versement extends Operation {
+    public Versement(Long numero, Date date, double nomtant) {
+        super(numero, date, nomtant);
+    }
+
+    @Override
+    public Type getType() {
+        return Type.Versement;
+    }
+}
